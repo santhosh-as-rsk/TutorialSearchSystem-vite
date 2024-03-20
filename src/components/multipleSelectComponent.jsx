@@ -6,7 +6,7 @@ import { Button, Container, Col, Row } from "react-bootstrap";
 import TableComponent from "./tablecomponent";
 import Highlighter from "react-highlight-words";
 
-export function MultiSelectTopicsSearchBar() {
+export function MultipleSelect() {
   const [topics, setTopics] = React.useState([]);
   const [subTopics, setSubTopics] = React.useState([]);
   const [selectedSubTopics, setSelectedSubTopics] = useState([]);
@@ -214,9 +214,5 @@ export function MultiSelectTopicsSearchBar() {
     </React.Fragment>
   );
 }
-
-const MultipleSelect = () => {
-  return <MultiSelectTopicsSearchBar />;
-};
 
 export default MultipleSelect;
